@@ -1,0 +1,1 @@
+ create table CASE_ENTITY (case_id VARCHAR, creation_date date, description VARCHAR, last_update_date date, title VARCHAR, primary key (case_id));

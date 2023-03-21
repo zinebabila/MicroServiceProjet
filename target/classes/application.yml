@@ -1,0 +1,25 @@
+#  in h2 console replace   url: jdbc:h2:~/test with  url: jdbc:h2:mem:testdb
+server:
+  port: 8081
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    username: sa
+    #  url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    password: ''
+    generate-unique-name: false
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      path: /h2-ui
+      enabled: true
+

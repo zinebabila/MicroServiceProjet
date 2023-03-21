@@ -1,0 +1,2 @@
+insert into CASE_ENTITY (case_id , creation_date , description , last_update_date , title )
+  values('E01', PARSEDATETIME('12/03/2013','dd/MM/yyyy'),'Expedition 01', PARSEDATETIME('12/03/2013','dd/MM/yyyy'),'case dream first commit');
